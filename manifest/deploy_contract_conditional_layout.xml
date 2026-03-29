@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>ContratoControllersTest</members>
+    <members>ContratoTemplateService</members>
+    <members>ContratoTemplateServiceTest</members>
+    <members>ContratoTriggerHandler</members>
+    <members>OpportunityRecordTypeService</members>
+    <members>OpportunityRecordTypeServiceTest</members>
+    <name>ApexClass</name>
+  </types>
+  <types>
+    <members>ContratoTrigger</members>
+    <members>OpportunityTrigger</members>
+    <name>ApexTrigger</name>
+  </types>
+  <types>
+    <members>Opportunity-Layout Assistencia Judicial</members>
+    <members>Opportunity-Layout Diagnostico de Contrato</members>
+    <members>Opportunity-Layout Elaboracao de Parecer</members>
+    <members>Opportunity-Layout Monitoramento Remoto</members>
+    <name>Layout</name>
+  </types>
+  <types>
+    <members>Opportunity.Processo_Contratos</members>
+    <name>BusinessProcess</name>
+  </types>
+  <types>
+    <members>Opportunity.Assistencia_Tecnica_Judicial</members>
+    <members>Opportunity.Diagnostico_de_Contrato</members>
+    <members>Opportunity.Elaboracao_de_Parecer</members>
+    <members>Opportunity.Monitoramento_Remoto</members>
+    <name>RecordType</name>
+  </types>
+  <types>
+    <members>Admin</members>
+    <name>Profile</name>
+  </types>
+  <version>61.0</version>
+</Package>

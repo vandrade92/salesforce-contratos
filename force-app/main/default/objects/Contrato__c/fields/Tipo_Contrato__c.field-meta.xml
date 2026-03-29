@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Tipo_Contrato__c</fullName>
+  <description>Tipo de contrato selecionado para renderizacao do PDF.</description>
+  <externalId>false</externalId>
+  <label>Tipo de Contrato</label>
+  <required>false</required>
+  <trackTrending>false</trackTrending>
+  <type>Picklist</type>
+  <valueSet>
+    <restricted>true</restricted>
+    <valueSetDefinition>
+      <sorted>false</sorted>
+      <value>
+        <fullName>Monitoramento Remoto</fullName>
+        <default>false</default>
+        <label>Monitoramento Remoto</label>
+      </value>
+      <value>
+        <fullName>AssistÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âªncia TÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©cnica Judicial</fullName>
+        <default>false</default>
+        <label>Assistência Técnica em Processo Judicial</label>
+      </value>
+      <value>
+        <fullName>ElaboraÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o de Parecer</fullName>
+        <default>false</default>
+        <label>Elaboração de Parecer</label>
+      </value>
+      <value>
+        <fullName>DiagnÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³stico de Contrato</fullName>
+        <default>false</default>
+        <label>Diagnóstico de Contrato</label>
+      </value>
+    </valueSetDefinition>
+  </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contrato_Padrao__c</fullName>
+    <description>Contrato padrao ao qual esta clausula pertence.</description>
+    <externalId>false</externalId>
+    <label>Contrato Padrao</label>
+    <referenceTo>Contrato_Padrao__c</referenceTo>
+    <relationshipLabel>Clausulas Padrao</relationshipLabel>
+    <relationshipName>Clausulas_Padrao</relationshipName>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

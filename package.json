@@ -1,0 +1,17 @@
+{
+  "name": "salesforce",
+  "version": "1.0.0",
+  "description": "Projeto base para desenvolvimento em Salesforce (SFDX format).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sandbox:setup": "powershell -ExecutionPolicy Bypass -File scripts/run-sandbox-flow.ps1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@salesforce/cli": "^2.126.4"
+  }
+}

@@ -1,0 +1,183 @@
+<apex:page controller="ContratoPdfController" renderAs="pdf" showHeader="false" sidebar="false" applyBodyTag="false" applyHtmlTag="false" contentType="text/html; charset=UTF-8">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <style type="text/css">
+            @page {
+                @bottom-right {
+                    content: 'Página ' counter(page) ' de ' counter(pages);
+                    font-family: Arial, sans-serif;
+                    font-size: 9pt;
+                    color: #555555;
+                }
+            }
+            body { font-family: Arial, sans-serif; font-size: 10.2pt; line-height: 1.4; color: #1f1f1f; margin: 14mm 12mm; }
+            h1 { font-size: 16pt; margin: 0 0 12px 0; }
+            h2 { font-size: 12pt; margin: 20px 0 8px 0; border-bottom: 1px solid #cccccc; padding-bottom: 4px; }
+            .contract-header { text-align: center; margin: 0 0 16px 0; }
+            .contract-header .line { font-weight: bold; text-transform: uppercase; font-size: 13.5pt; line-height: 1.25; }
+            .row { margin: 4px 0; }
+            .label { font-weight: bold; }
+            .section { margin-top: 14px; }
+            .footer { margin-top: 30px; font-size: 9pt; color: #555555; }
+            .muted { color: #555555; }
+
+            table.quadro { width: 100%; border-collapse: collapse; margin-top: 10px; }
+            table.quadro td { border: 1px solid #3b3b3b; padding: 7px 8px; vertical-align: top; line-height: 1.35; }
+            table.quadro tr.section td { background: #d9d9d9; font-weight: bold; padding-top: 6px; padding-bottom: 6px; }
+            table.quadro td.col-half { width: 50%; }
+
+            .clause-block { margin: 16px 0 22px 0; }
+            .clause-heading { font-weight: bold; text-transform: uppercase; margin: 12px 0 10px 0; }
+            .clause-row { margin: 6px 0; text-align: justify; line-height: 1.42; }
+            .clause-prefix { display: inline; font-weight: bold; margin-right: 12px; }
+            .clause-content { display: inline; }
+            .clause-row.subtitle .clause-content { font-weight: bold; text-decoration: underline; line-height: 1.3; }
+            .clause-row.bullet .clause-prefix { margin-right: 10px; }
+
+            .clause-row.signature-intro { margin-top: 10px; margin-bottom: 16px; text-align: justify; }
+            .clause-row.signature-city-date { margin: 18px 0 24px 0; text-align: center; font-weight: bold; }
+            .clause-row.signature-role { margin: 20px 0 18px 0; text-align: left; }
+            .clause-row.signature-role .clause-content { font-weight: bold; text-decoration: underline; text-transform: uppercase; }
+            .clause-row.signature-line { margin: 2px 0 4px 0; text-align: left; }
+            .clause-row.signature-line .clause-content { display: inline-block; width: 330px; border-bottom: 1px solid #1f1f1f; min-height: 18px; vertical-align: bottom; }
+            .clause-row.signature-name { margin: 2px 0 20px 0; text-align: left; font-weight: bold; text-transform: uppercase; }
+            .clause-row.signature-witness-block { margin-top: 12px; margin-bottom: 8px; text-align: left; }
+            .clause-row.signature-witness-field { display: none; }
+
+            .signature-witness-title { font-weight: bold; text-decoration: underline; text-transform: uppercase; margin-bottom: 12px; }
+            .signature-witness-grid { width: 100%; }
+            .signature-witness-col { display: inline-block; width: 48%; vertical-align: top; }
+            .signature-witness-col.right { margin-left: 4%; }
+            .signature-witness-line { border-bottom: 1px solid #1f1f1f; height: 20px; margin-bottom: 6px; }
+            .signature-witness-label { line-height: 1.45; }
+            
+        </style>
+    </head>
+    <body>
+        <div class="contract-header">
+            <div class="line">CONTRATO DE PRESTACAO DE SERVICOS N&#186; {!numeroContratoCabecalho}</div>
+            <div class="line">PROPOSTA N&#186; {!numeroPropostaCabecalho}</div>
+        </div>
+
+        <h2>QUADRO RESUMO</h2>
+        <table class="quadro">
+            <tr class="section"><td colspan="2">1. Parte Contratante</td></tr>
+            <tr>
+                <td class="col-half"><span class="label">1.1. Razao Social:</span> {!contrato.Contratante_Razao_Social__c}</td>
+                <td class="col-half"><span class="label">1.2. CNPJ:</span> {!contrato.Contratante_CNPJ__c}</td>
+            </tr>
+            <tr><td colspan="2"><span class="label">1.3. Endereco/Sede:</span> {!contrato.Contratante_Endereco_Completo__c}</td></tr>
+            <tr><td colspan="2"><span class="label">1.4. Qualificacao/Representante Legal:</span> {!representanteContratanteResumo}</td></tr>
+
+            <tr class="section"><td colspan="2">2. Parte Contratada</td></tr>
+            <tr>
+                <td class="col-half"><span class="label">2.1. Nome/Razao Social:</span> {!parteContratadaNome}</td>
+                <td class="col-half"><span class="label">2.2. CNPJ:</span> {!parteContratadaCnpj}</td>
+            </tr>
+            <tr><td colspan="2"><span class="label">2.3. Endereco/Sede:</span> {!parteContratadaEndereco}</td></tr>
+            <tr><td colspan="2"><span class="label">2.4. Qualificacao/Representante Legal:</span> {!parteContratadaRepresentante}</td></tr>
+
+            <tr class="section"><td colspan="2">3. Objeto da Prestacao de Servicos</td></tr>
+            <tr><td colspan="2"><span class="label">3.1. Descricao dos Servicos:</span> {!descricaoServicosResumo}</td></tr>
+            <tr><td colspan="2"><span class="label">3.2. Descricao da Obra Para a Qual Serao Prestados os Servicos:</span> {!contrato.Descricao_Obra__c}</td></tr>
+            <tr><td colspan="2"><span class="label">3.3. Local da Obra:</span> {!contrato.Local_Obra__c}</td></tr>
+
+            <tr class="section"><td colspan="2">4. Preco Contratual</td></tr>
+            <tr>
+                <td>
+                    <div class="label">4.1. Valores:</div>
+                    <apex:repeat value="{!resumoValoresItens}" var="item">
+                        <div>{!item}</div>
+                    </apex:repeat>
+                </td>
+                <td><span class="label">4.2. Data-Base:</span> <apex:outputText value="{0,date,dd'/'MM'/'yyyy}"><apex:param value="{!contrato.Data_Base__c}"/></apex:outputText></td>
+            </tr>
+            <tr>
+                <td><span class="label">4.3. Modalidade:</span> {!modalidadeResumo}</td>
+                <td><span class="label">4.4. Indice de Correcao Monetaria:</span> {!contrato.Indice_Correcao_Monetaria__c}</td>
+            </tr>
+
+            <tr class="section"><td colspan="2">5. Prazo</td></tr>
+            <tr><td colspan="2"><span class="label">5.1. Prazo de Vigencia:</span> {!prazoVigenciaResumo}</td></tr>
+
+            <tr class="section"><td colspan="2">6. Multas</td></tr>
+            <tr><td><span class="label">6.1. Por Termino Motivado</span></td><td>{!multaTerminoResumo}</td></tr>
+            <tr><td><span class="label">6.2. Por Quebra da Obrigacao de Sigilo</span></td><td>{!multaSigiloResumo}</td></tr>
+
+            <tr class="section"><td colspan="2">7. Representantes</td></tr>
+            <tr>
+                <td><span class="label">7.1. Parte Contratante</span></td>
+                <td>
+                    <div class="label">Assuntos Comerciais e Tecnicos:</div>
+                    <div><span class="label">Nome:</span> {!contatoContratanteNome}</div>
+                    <div><span class="label">Telefone:</span> {!contatoContratanteTelefone}</div>
+                    <div><span class="label">E-mail:</span> {!contatoContratanteEmail}</div>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="label">7.2. Parte Contratada</span></td>
+                <td>
+                    <div class="label">Assuntos Comerciais e Tecnicos:</div>
+                    <div><span class="label">Nome:</span> {!contatoContratadaNome}</div>
+                    <div><span class="label">Telefone:</span> {!contatoContratadaTelefone}</div>
+                    <div><span class="label">E-mail:</span> {!contatoContratadaEmail}</div>
+                </td>
+            </tr>
+
+            <tr class="section"><td colspan="2">8. Anexos</td></tr>
+            <tr><td colspan="2">Anexo I - Proposta Comercial</td></tr>
+
+            <tr class="section"><td colspan="2">9. Disposicoes Adicionais</td></tr>
+            <tr><td colspan="2"><span class="label">9.1.</span> {!disposicoesAdicionaisResumo}</td></tr>
+        </table>
+
+        <h2>CLAUSULAS</h2>
+        <apex:repeat value="{!clauseViews}" var="v">
+            <div class="clause-block">
+                <div class="clause-heading">{!v.heading}</div>
+                <apex:repeat value="{!v.lines}" var="ln">
+                    <apex:outputPanel layout="none" rendered="{!ln.styleClass != 'signature-witness-field'}">
+                        <div class="clause-row {!ln.styleClass}">
+                            <apex:outputPanel layout="none" rendered="{!ln.styleClass != 'signature-witness-block'}">
+                                <apex:outputPanel layout="none" rendered="{!NOT(ISBLANK(ln.prefix))}">
+                                    <span class="clause-prefix">{!ln.prefix}</span>
+                                </apex:outputPanel>
+                                <span class="clause-content"><apex:outputText value="{!ln.text}"/></span>
+                            </apex:outputPanel>
+                            <apex:outputPanel layout="none" rendered="{!ln.styleClass = 'signature-witness-block'}">
+                                <div class="signature-witness-title"><apex:outputText value="{!ln.text}"/></div>
+                                <div class="signature-witness-grid">
+                                    <div class="signature-witness-col">
+                                        <div class="signature-witness-line"></div>
+                                        <div class="signature-witness-label">Nome:</div>
+                                        <div class="signature-witness-label">RG:</div>
+                                        <div class="signature-witness-label">CPF:</div>
+                                    </div>
+                                    <div class="signature-witness-col right">
+                                        <div class="signature-witness-line"></div>
+                                        <div class="signature-witness-label">Nome:</div>
+                                        <div class="signature-witness-label">RG:</div>
+                                        <div class="signature-witness-label">CPF:</div>
+                                    </div>
+                                </div>
+                            </apex:outputPanel>
+                        </div>
+                    </apex:outputPanel>
+                </apex:repeat>
+            </div>
+        </apex:repeat>
+    </body>
+</html>
+</apex:page>
+
+
+
+
+
+
+
+
+
+
+

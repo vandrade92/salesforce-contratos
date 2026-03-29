@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Data_Geracao_Final__c</fullName>
+  <description>Data e hora da ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºltima geraÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o de versÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o final do contrato.</description>
+  <externalId>false</externalId>
+  <label>Data de Geração Final</label>
+  <required>false</required>
+  <trackTrending>false</trackTrending>
+  <type>DateTime</type>
+</CustomField>

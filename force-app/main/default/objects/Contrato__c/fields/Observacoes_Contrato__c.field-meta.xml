@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Observacoes_Contrato__c</fullName>
+  <description>ObservaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âµes gerais para customizaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o do contrato.</description>
+  <externalId>false</externalId>
+  <label>Observações do Contrato</label>
+  <length>32768</length>
+  <required>false</required>
+  <trackTrending>false</trackTrending>
+  <type>LongTextArea</type>
+  <visibleLines>8</visibleLines>
+</CustomField>

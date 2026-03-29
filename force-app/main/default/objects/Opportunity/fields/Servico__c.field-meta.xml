@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Servico__c</fullName>
+    <label>Servico</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Monitoramento Remoto</fullName>
+                <default>false</default>
+                <label>Monitoramento Remoto</label>
+            </value>
+            <value>
+                <fullName>Monitoramento Alocado</fullName>
+                <default>false</default>
+                <label>Monitoramento Alocado</label>
+            </value>
+            <value>
+                <fullName>Ação Judicial</fullName>
+                <default>false</default>
+                <label>Ação Judicial</label>
+            </value>
+            <value>
+                <fullName>Análise Comparativa</fullName>
+                <default>false</default>
+                <label>Análise Comparativa</label>
+            </value>
+            <value>
+                <fullName>Análise de Pleito</fullName>
+                <default>false</default>
+                <label>Análise de Pleito</label>
+            </value>
+            <value>
+                <fullName>Assessoria Técnica Especializada</fullName>
+                <default>false</default>
+                <label>Assessoria Técnica Especializada</label>
+            </value>
+            <value>
+                <fullName>Assessoria Técnica e Jurídica</fullName>
+                <default>false</default>
+                <label>Assessoria Técnica e Jurídica</label>
+            </value>
+            <value>
+                <fullName>Assist. Téc. em Arbitragem</fullName>
+                <default>false</default>
+                <label>Assist. Téc. em Arbitragem</label>
+            </value>
+            <value>
+                <fullName>Assist. Téc. e Juríd. em Arbitragem</fullName>
+                <default>false</default>
+                <label>Assist. Téc. e Juríd. em Arbitragem</label>
+            </value>
+            <value>
+                <fullName>Assist. Téc. em Processo Judicial</fullName>
+                <default>false</default>
+                <label>Assist. Téc. em Processo Judicial</label>
+            </value>
+            <value>
+                <fullName>Assist. Juríd. em Arbitragem</fullName>
+                <default>false</default>
+                <label>Assist. Juríd. em Arbitragem</label>
+            </value>
+            <value>
+                <fullName>Atuação em Mediação</fullName>
+                <default>false</default>
+                <label>Atuação em Mediação</label>
+            </value>
+            <value>
+                <fullName>Auditoria Contratual</fullName>
+                <default>false</default>
+                <label>Auditoria Contratual</label>
+            </value>
+            <value>
+                <fullName>Célula de Administração Contratual</fullName>
+                <default>false</default>
+                <label>Célula de Administração Contratual</label>
+            </value>
+            <value>
+                <fullName>Diagnóstico de Contrato</fullName>
+                <default>false</default>
+                <label>Diagnóstico de Contrato</label>
+            </value>
+            <value>
+                <fullName>Diagnóstico + Pleito</fullName>
+                <default>false</default>
+                <label>Diagnóstico + Pleito</label>
+            </value>
+            <value>
+                <fullName>Dispute Board</fullName>
+                <default>false</default>
+                <label>Dispute Board</label>
+            </value>
+            <value>
+                <fullName>Due Diligence</fullName>
+                <default>false</default>
+                <label>Due Diligence</label>
+            </value>
+            <value>
+                <fullName>Elaboração de Carta</fullName>
+                <default>false</default>
+                <label>Elaboração de Carta</label>
+            </value>
+            <value>
+                <fullName>Elaboração de Cronograma Baseline</fullName>
+                <default>false</default>
+                <label>Elaboração de Cronograma Baseline</label>
+            </value>
+            <value>
+                <fullName>Elaboração de ECA Técnico</fullName>
+                <default>false</default>
+                <label>Elaboração de ECA Técnico</label>
+            </value>
+            <value>
+                <fullName>Elaboração de Manual de Compliance</fullName>
+                <default>false</default>
+                <label>Elaboração de Manual de Compliance</label>
+            </value>
+            <value>
+                <fullName>Elaboração de Matriz de Risco</fullName>
+                <default>false</default>
+                <label>Elaboração de Matriz de Risco</label>
+            </value>
+            <value>
+                <fullName>Elaboração de Minuta de Contrato</fullName>
+                <default>false</default>
+                <label>Elaboração de Minuta de Contrato</label>
+            </value>
+            <value>
+                <fullName>Elaboração de Parecer Técnico</fullName>
+                <default>false</default>
+                <label>Elaboração de Parecer Técnico</label>
+            </value>
+            <value>
+                <fullName>Elaboração de Pleito</fullName>
+                <default>false</default>
+                <label>Elaboração de Pleito</label>
+            </value>
+            <value>
+                <fullName>Elaboração de Time Impact Analysis</fullName>
+                <default>false</default>
+                <label>Elaboração de Time Impact Analysis</label>
+            </value>
+            <value>
+                <fullName>Elaboração de Tréplica</fullName>
+                <default>false</default>
+                <label>Elaboração de Tréplica</label>
+            </value>
+            <value>
+                <fullName>Gerenciamento de Projeto</fullName>
+                <default>false</default>
+                <label>Gerenciamento de Projeto</label>
+            </value>
+            <value>
+                <fullName>LTA (Long Term Agreement)</fullName>
+                <default>false</default>
+                <label>LTA (Long Term Agreement)</label>
+            </value>
+            <value>
+                <fullName>Organização de Contratos</fullName>
+                <default>false</default>
+                <label>Organização de Contratos</label>
+            </value>
+            <value>
+                <fullName>Serviço Jurídico</fullName>
+                <default>false</default>
+                <label>Serviço Jurídico</label>
+            </value>
+            <value>
+                <fullName>TIA (Time Impact Analysis</fullName>
+                <default>false</default>
+                <label>TIA (Time Impact Analysis</label>
+            </value>
+            <value>
+                <fullName>Treinamento de Administração Contratual</fullName>
+                <default>false</default>
+                <label>Treinamento de Administração Contratual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

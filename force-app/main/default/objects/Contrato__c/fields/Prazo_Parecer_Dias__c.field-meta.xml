@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prazo_Parecer_Dias__c</fullName>
+    <description>Prazo em dias para entrega do parecer tecnico.</description>
+    <externalId>false</externalId>
+    <label>Prazo Parecer (dias)</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+</CustomField>

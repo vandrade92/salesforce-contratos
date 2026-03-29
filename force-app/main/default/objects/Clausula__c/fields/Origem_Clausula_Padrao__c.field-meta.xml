@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origem_Clausula_Padrao__c</fullName>
+    <description>Clausula padrao que originou esta clausula do contrato.</description>
+    <externalId>false</externalId>
+    <label>Origem da Clausula Padrao</label>
+    <referenceTo>Clausula_Padrao__c</referenceTo>
+    <relationshipName>Origem_Clausula_Padrao</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

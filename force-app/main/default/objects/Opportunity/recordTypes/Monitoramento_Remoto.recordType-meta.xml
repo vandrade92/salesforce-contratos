@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monitoramento_Remoto</fullName>
+    <active>true</active>
+    <businessProcess>Processo_Contratos</businessProcess>
+    <label>Monitoramento Remoto</label>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parceiro Comercial Sul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parceiro Fernando Linhares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parceiro Jackeline Honda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parceiro Lídio Antunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parceiro Marcos Ferreira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parceiro Oliander Zacarias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parceiro Roberto Gouveia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parceiro Sillas Xavier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parceiro Victor Batista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Servico__c</picklist>
+        <values>
+            <fullName>Análise Comparativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Análise de Pleito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assessoria Técnica Especializada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assessoria Técnica e Jurídica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist%2E Juríd%2E em Arbitragem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist%2E Téc%2E e Juríd%2E em Arbitragem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist%2E Téc%2E em Arbitragem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist%2E Téc%2E em Processo Judicial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atuação em Mediação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auditoria Contratual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ação Judicial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Célula de Administração Contratual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagnóstico %2B Pleito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagnóstico de Contrato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispute Board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Due Diligence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboração de Carta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboração de Cronograma Baseline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboração de ECA Técnico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboração de Manual de Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboração de Matriz de Risco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboração de Minuta de Contrato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboração de Parecer Técnico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboração de Pleito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboração de Time Impact Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboração de Tréplica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerenciamento de Projeto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LTA %28Long Term Agreement%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoramento Alocado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoramento Remoto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organização de Contratos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serviço Jurídico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TIA %28Time Impact Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treinamento de Administração%C2%A0Contratual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Aceita</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Aberto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encerrada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inviável</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recusada pelo cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revisão</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Existing Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

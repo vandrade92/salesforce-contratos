@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Contrato__c-Layout de Contrato</members>
+        <members>Contrato__c-Layout Assistencia Judicial</members>
+        <members>Contrato__c-Layout Diagnostico e Pleito</members>
+        <members>Contrato__c-Layout Elaboracao de Parecer</members>
+        <members>Contrato__c-Layout Monitoramento Remoto</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
+    <version>62.0</version>
+</Package>

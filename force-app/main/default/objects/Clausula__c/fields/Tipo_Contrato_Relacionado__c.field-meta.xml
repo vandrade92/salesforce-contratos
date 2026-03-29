@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_Contrato_Relacionado__c</fullName>
+    <description>Exibe o tipo de contrato do Contrato relacionado.</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Contrato__r.Tipo_Contrato__c)</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <label>Tipo de Contrato Relacionado</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+</CustomField>

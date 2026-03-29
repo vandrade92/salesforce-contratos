@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Descricao_Componente_1__c</fullName>
+  <description>DescriÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o do primeiro componente de valor contratual (quando aplicÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡vel).</description>
+  <externalId>false</externalId>
+  <label>Descrição Componente 1</label>
+  <length>255</length>
+  <required>false</required>
+  <trackTrending>false</trackTrending>
+  <type>Text</type>
+  <unique>false</unique>
+</CustomField>

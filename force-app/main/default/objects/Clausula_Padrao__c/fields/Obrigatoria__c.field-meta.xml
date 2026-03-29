@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Obrigatoria__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indica se a clausula e obrigatoria para o contrato.</description>
+    <externalId>false</externalId>
+    <label>Obrigatoria</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

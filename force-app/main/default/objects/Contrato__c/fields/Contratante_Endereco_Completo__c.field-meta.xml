@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Contratante_Endereco_Completo__c</fullName>
+  <description>EndereÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§o completo do contratante para o contrato.</description>
+  <externalId>false</externalId>
+  <label>Contratante Endereço Completo</label>
+  <length>32768</length>
+  <required>false</required>
+  <trackTrending>false</trackTrending>
+  <type>LongTextArea</type>
+  <visibleLines>4</visibleLines>
+</CustomField>

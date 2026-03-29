@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Contrato_Padrao__c</fullName>
+  <description>Modelo padrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o utilizado como base para este contrato.</description>
+  <externalId>false</externalId>
+  <label>Contrato Padrão</label>
+  <referenceTo>Contrato_Padrao__c</referenceTo>
+  <relationshipName>Contrato_Padrao</relationshipName>
+  <required>false</required>
+  <trackTrending>false</trackTrending>
+  <type>Lookup</type>
+</CustomField>

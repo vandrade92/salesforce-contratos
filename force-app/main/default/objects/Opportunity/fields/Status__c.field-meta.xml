@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Em Aberto</fullName>
+                <default>false</default>
+                <label>Em Aberto</label>
+            </value>
+            <value>
+                <fullName>Revisão</fullName>
+                <default>false</default>
+                <label>Revisão</label>
+            </value>
+            <value>
+                <fullName>Aceita</fullName>
+                <default>false</default>
+                <label>Aceita</label>
+            </value>
+            <value>
+                <fullName>Cancelada</fullName>
+                <default>false</default>
+                <label>Cancelada</label>
+            </value>
+            <value>
+                <fullName>Encerrada</fullName>
+                <default>false</default>
+                <label>Encerrada</label>
+            </value>
+            <value>
+                <fullName>Recusada pelo cliente</fullName>
+                <default>false</default>
+                <label>Recusada pelo cliente</label>
+            </value>
+            <value>
+                <fullName>Inviável</fullName>
+                <default>false</default>
+                <label>Inviável</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

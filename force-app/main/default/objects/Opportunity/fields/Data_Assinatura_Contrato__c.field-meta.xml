@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Assinatura_Contrato__c</fullName>
+    <description>Data de assinatura usada nas clausulas finais do contrato.</description>
+    <label>Data Assinatura Contrato</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

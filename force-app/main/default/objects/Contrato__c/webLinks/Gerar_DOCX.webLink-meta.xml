@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gerar_DOCX</fullName>
+    <availability>online</availability>
+    <description>Gera um arquivo DOCX editavel do contrato e salva em Files.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Gerar DOCX</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/ContratoGerarDocx?id={!Contrato__c.Id}</url>
+</WebLink>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recarregar_Clausulas_do_Padrao</fullName>
+    <availability>online</availability>
+    <description>Recarrega as cláusulas do contrato com base no modelo padrão selecionado.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Recarregar Cláusulas do Padrão</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/ContratoRecarregarClausulas?id={!Contrato__c.Id}</url>
+</WebLink>

@@ -1,0 +1,6 @@
+<apex:page controller="ContratoGenerateDocxController" action="{!execute}" showHeader="false" sidebar="false">
+    <apex:pageMessages />
+    <apex:outputPanel>
+        Gerando DOCX do contrato...
+    </apex:outputPanel>
+</apex:page>

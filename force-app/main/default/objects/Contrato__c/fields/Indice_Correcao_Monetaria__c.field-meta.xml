@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indice_Correcao_Monetaria__c</fullName>
+    <description>Indice de correcao monetaria do contrato.</description>
+    <externalId>false</externalId>
+    <label>Indice de Correcao</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>false</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IPCA/IBGE</fullName>
+                <default>true</default>
+                <label>IPCA/IBGE</label>
+            </value>
+            <value>
+                <fullName>IGP-M</fullName>
+                <default>false</default>
+                <label>IGP-M</label>
+            </value>
+            <value>
+                <fullName>INCC</fullName>
+                <default>false</default>
+                <label>INCC</label>
+            </value>
+            <value>
+                <fullName>Sem Correcao</fullName>
+                <default>false</default>
+                <label>Sem Correcao</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

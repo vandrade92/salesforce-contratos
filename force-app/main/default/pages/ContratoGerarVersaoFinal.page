@@ -1,0 +1,7 @@
+<apex:page controller="ContratoGenerateFinalController" action="{!execute}" showHeader="false" sidebar="false">
+    <apex:pageMessages />
+    <apex:outputPanel>
+        Gerando versao final do contrato...
+    </apex:outputPanel>
+</apex:page>
+

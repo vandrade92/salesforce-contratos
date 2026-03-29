@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Diagnostico_de_Contrato</fullName>
+  <active>true</active>
+  <description>Layout e visualizacao para contratos de diagnostico de contrato e pleito.</description>
+  <label>Diagnostico de Contrato</label>
+</RecordType>

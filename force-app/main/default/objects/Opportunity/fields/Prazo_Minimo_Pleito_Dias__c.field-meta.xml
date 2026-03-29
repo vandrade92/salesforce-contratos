@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prazo_Minimo_Pleito_Dias__c</fullName>
+    <description>Prazo minimo em dias para elaboracao de pleito.</description>
+    <externalId>false</externalId>
+    <label>Prazo Minimo Pleito (dias)</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

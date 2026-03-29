@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modalidade_Contrato__c</fullName>
+    <description>Modalidade comercial do contrato.</description>
+    <externalId>false</externalId>
+    <label>Modalidade do Contrato</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>false</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Global</fullName>
+                <default>true</default>
+                <label>Global</label>
+            </value>
+            <value>
+                <fullName>PreÃƒÆ’Ã‚Â§o Global</fullName>
+                <default>false</default>
+                <label>PreÃƒÆ’Ã‚Â§o Global</label>
+            </value>
+            <value>
+                <fullName>Por Hora TÃƒÆ’Ã‚Â©cnica</fullName>
+                <default>false</default>
+                <label>Por Hora TÃƒÆ’Ã‚Â©cnica</label>
+            </value>
+            <value>
+                <fullName>Escopo + Sucesso</fullName>
+                <default>false</default>
+                <label>Escopo + Sucesso</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
